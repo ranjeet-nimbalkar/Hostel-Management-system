@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="680.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.login_Controller">
+    <children>
+      <ImageView fitHeight="464.0" fitWidth="680.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../cover3.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="36.0" text="Hostle Management" textFill="#fffefe" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="206.0" prefHeight="464.0" prefWidth="218.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="et_user" minHeight="0.0" prefHeight="30.0" prefWidth="100.0" promptText="Enter User Name">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="130.0" />
+               </VBox.margin>
+            </TextField>
+            <Label fx:id="label_user" prefHeight="17.0" prefWidth="279.0" text="Enter your Username" textFill="#d71919" visible="false">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="et_pass" prefHeight="30.0" promptText="Enter Password">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="50.0" />
+               </VBox.margin>
+            </PasswordField>
+            <Label fx:id="label_pass" prefHeight="17.0" prefWidth="279.0" text="Enter your Password" textFill="#d71919" visible="false" />
+            <JFXButton onMouseClicked="#sign_in" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2px 2px 2px 2px;" text="Sign In" textFill="#d7cbcb">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Label text="Forget Password" textFill="#fcfafa" underline="true">
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="89.0" prefWidth="680.0">
+               <children>
+                  <Label text="Contact" textFill="#fcfafa">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Vandana Surwase" textFill="#fcfafa">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="9834194689" textFill="#fcfafa">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="2.0" prefHeight="83.0" prefWidth="680.0" spacing="20.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <JFXButton onMouseClicked="#tab_sign_up" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Sign Up" textFill="#fff6f6" />
+                <JFXButton onMouseClicked="#tab_sign_in" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Sign In" textFill="#fff6f6">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </JFXButton>
+            </children>
+            <padding>
+                <Insets right="20.0" />
+            </padding>
+        </HBox>
+    </children>
+</AnchorPane>
