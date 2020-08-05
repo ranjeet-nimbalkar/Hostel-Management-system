@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.user.HomePage">
+   <top>
+      <HBox alignment="CENTER_LEFT" opacity="0.72" prefHeight="129.0" prefWidth="1200.0" spacing="20.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="20.0" right="350.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="tab_home" onMouseClicked="#Home_click" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Home" textFill="#fff6f6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="tab_hostel" onMouseClicked="#Hostel_click" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Hostel" textFill="#fff6f6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="tab_contact" onMouseClicked="#Contact_click" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Contact Us" textFill="#fff6f6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="tab_notify" onMouseClicked="#Notification_click" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Notificaton" textFill="#fff6f6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="tab_profile" onMouseClicked="#Roll_click" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Roll No" textFill="#fff6f6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+         </children></HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="holderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="511.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.user.contactUs">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="302.0" text="Contact Us" textFill="#030303">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="et_h_name" prefHeight="35.0" prefWidth="300.0" promptText="Hostel Name" />
+                  <TextField fx:id="et_name" prefHeight="35.0" prefWidth="300.0" promptText="Enter Name" />
+                  <TextField fx:id="et_id" prefHeight="35.0" prefWidth="300.0" promptText="Enter ID" />
+                  <TextField fx:id="et_subject" prefHeight="35.0" prefWidth="300.0" promptText="Subject" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefWidth="370.0" spacing="20.0">
+               <children>
+                  <TextArea fx:id="et_text" prefHeight="161.0" prefWidth="370.0" promptText="Enter Text">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="90.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <JFXButton alignment="CENTER" onMouseClicked="#submit" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #f13333;" text="Submit" textFill="#f5f2f2">
+                     <font>
+                        <Font size="15.0" />
+                     </font></JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
